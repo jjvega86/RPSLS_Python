@@ -6,7 +6,11 @@ class Human(Player):
         super().__init__(name)
 
     def choose_gesture(self):
-        print('Please choose your gesture!')
+        self.print_gesture_options()
+        self.chosen_gesture = input("Please choose your gesture!")
+        return self.chosen_gesture
+
+
 
 
 

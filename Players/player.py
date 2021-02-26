@@ -1,11 +1,12 @@
-from gesture import Rock, Paper, Scissors, Lizard, Spock
+from gesture import Gesture, Rock, Paper, Scissors, Lizard, Spock
 
 
 class Player:
     def __init__(self):
         self.name = ''
         self.gestures = (Rock(), Paper(), Scissors(), Lizard(), Spock())
-        self.chosen_gesture = ''
+        self.chosen_gesture = Gesture()
+        self.current_score = 0
 
     def choose_gesture(self):
         return self.chosen_gesture
