@@ -1,5 +1,5 @@
 class Player:
-    def __init__(self):
+    def __init__(self, name):
         self.name = ''
         self.gestures = ("rock", "paper", "scissors", "lizard", "spock")
         self.chosen_gesture = ''
@@ -9,4 +9,5 @@ class Player:
 
     def print_gesture_options(self):
         for gesture in self.gestures:
-            print(gesture)
+            index = self.gestures.index(gesture)
+            print("Type" + index + "and ENTER for" + gesture)
