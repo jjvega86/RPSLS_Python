@@ -1,6 +1,6 @@
-from Players.human import Human
-from Players.computer import Computer
-from Players.player import Player
+from human import Human
+from computer import Computer
+from player import Player
 
 
 class Game:
@@ -30,5 +30,10 @@ class Game:
         print('Spock vaporizes Rocks')
 
     def compare_gestures(self):
-        self.player_one.choose_gesture()
-        self.player_two.choose_gesture()
+        p1_chosen_gesture = self.player_one.choose_gesture()
+        p2_chosen_gesture = self.player_two.choose_gesture()
+
+        p1_chosen_gesture
+
+
+

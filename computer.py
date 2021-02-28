@@ -8,5 +8,4 @@ class Computer(Player):
 
     def choose_gesture(self):
         choice = random.randint(0, 4)
-        self.chosen_gesture = self.gestures[choice]
-        return self.chosen_gesture
+        return self.gestures[choice]
