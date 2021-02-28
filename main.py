@@ -1,7 +1,6 @@
-from human import Human
+from game import Game
 
 if __name__ == '__main__':
-    human1 = Human('JJ')
-    human1.print_gesture_options()
-    print(human1.name)
+    game = Game()
+    game.play_game()
 
