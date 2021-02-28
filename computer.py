@@ -1,5 +1,5 @@
 from player import Player
-from random import random
+import random
 
 
 class Computer(Player):
@@ -7,5 +7,4 @@ class Computer(Player):
         super().__init__(name)
 
     def choose_gesture(self):
-        choice = random.randint(0, 4)
-        return self.gestures[choice]
+        return random.choice(self.gestures)

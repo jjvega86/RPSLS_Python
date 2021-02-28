@@ -4,16 +4,16 @@ from computer import Computer
 
 class Game:
     def __init__(self):
-        self.player_one = Human()
+        self.player_one = Human(input("What is your name?"))
         self.player_two = None  # Setting Player 2 equal to None, equivalent of no value. Will determine
         # using choose_game_type
 
     def choose_game_type(self):
         player_input = input('Press 1 for Single Player or 2 for Multiplayer')
-        if player_input == 1:
-            self.player_two = Computer()
+        if player_input == '1':
+            self.player_two = Computer('HAL')
         else:
-            self.player_two = Human()
+            self.player_two = Human(input("What is your name?"))
 
     @staticmethod
     def display_rules():
